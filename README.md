@@ -1,7 +1,5 @@
-### Hi there, I'm Kristjan
+### Hi there, I'm Kristjan Bjarni
 
-## My main interest are
-- Building software and programming
-- Building racing drones
-- Flying drones and FPV
-- Home automation software
+Here are some of my projects, mostly related to to FPV drone flying.
+
+Enjoy.
