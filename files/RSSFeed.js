@@ -15,7 +15,6 @@ function RSSFeed(RSS_URL,count,content_id)
             <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
               ${el.querySelector("title").innerHTML}
             </a>
-            <div class="description" style="display:none">${el.querySelector("description").innerHTML}</div>
           </li>
       `;
     }
