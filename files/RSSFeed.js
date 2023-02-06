@@ -7,7 +7,7 @@ function RSSFeed(RSS_URL,count,content_id)
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(data => {
     const items = data.querySelectorAll("item");
-    let html = ``;
+    let html = `<ul>`;
     for (let i=0; i<Math.min(items.length,count); i++) {
       let el = items[i];
       html += `
@@ -19,6 +19,7 @@ function RSSFeed(RSS_URL,count,content_id)
           </li>
       `;
     }
+    html += `</ul>`;
     let content = document.getElementById(content_id);
     content.innerHTML = html;
   });
